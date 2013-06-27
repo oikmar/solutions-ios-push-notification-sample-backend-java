@@ -46,11 +46,11 @@ The download contains the Java backend. After the download finishes, unzip the f
 
 2. Your iOS application needs to register for push notifications by calling registerForRemoteNotificationTypes().
 
-3. Your iOS application needs to implement didRegisterForRemoteNotificationsWithDeviceToken() and pass the retrieved device token to the backend by calling deviceregistration registerDevice method. For testing you can instead use your web browser and navigate to https://<url_of_your_deployed_backend>/admin/test?registerdevicetoken=<insert_device_token_passed_to_didRegisterForRemoteNotificationsWithDeviceToken>.
+3. Your iOS application needs to implement didRegisterForRemoteNotificationsWithDeviceToken() and pass the retrieved device token to the backend by calling deviceregistration registerDevice method. For testing you can instead use your web browser and navigate to https://url_of_your_deployed_backend/admin/test?registerdevicetoken=device_token_passed_to_didRegisterForRemoteNotificationsWithDeviceToken.
 
 4. It may help with testing the notifications if you change the alert style for your iOS app in iOS Settings->Notifications to Alert instead of Banner.
 
-5. To test sending push notification you can use use your web browser and navigate to https://<url_of_your_deployed_backend>/admin/test?alert=HelloWorld. This should send push notification to all registered devices.
+5. To test sending push notification you can use use your web browser and navigate to https://url_of_your_deployed_backend/admin/test?alert=HelloWorld. This should send push notification to all registered devices.
 
 6. A very simple iOS app that registers for push notifications, passes the device token to the deployed backend and displays a text box when it receives notification is also published on [GitHub](https://github.com/GoogleCloudPlatform/solutions-ios-push-notification-sample-ios-client).
 
