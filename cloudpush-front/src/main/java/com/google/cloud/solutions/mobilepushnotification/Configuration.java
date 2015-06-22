@@ -36,7 +36,7 @@ public class Configuration {
    *
    */
   public static final boolean ALLOW_UNAUTHENTICATED_CALLS = false;
-  public static final String CLIENT_ID = "292824132082.apps.googleusercontent.com";
+  public static final String CLIENT_ID = "<!!! INSERT YOUR CLIENT ID FOR IOS HERE !!!>";
 
   private static final String TASKQUEUE_NAME_HEADER = "X-AppEngine-QueueName";
 
